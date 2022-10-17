@@ -12,8 +12,8 @@
     align-items: center;
 }
 .card{
-    width: 320px;
-    height: 340px;
+    width: 595px;
+    height: 338px;
     background: #fff;
     border-radius: 10px;
     position: relative;
@@ -74,9 +74,10 @@
     margin-top: 20px;
 }
 .box{
-    margin-top: -10rem;
+    padding: 10px 30px;
     border-radius: 10px;
     text-align: center;
+    margin-top: -1rem;
 }
 .box:hover{
     background-color: rgba(128, 128, 128, 0.137);
