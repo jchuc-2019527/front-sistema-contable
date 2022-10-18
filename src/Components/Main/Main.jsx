@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom'
 import Login from '../Login/Login'
 import UserHome from '../UserHome/UserHome'
 import Perfil from '../Perfil/Perfil'
+import Register from '../Register/Register'
 const Main = () => {
 
   const storageToken = localStorage.getItem('token')
@@ -16,6 +17,7 @@ const Main = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/tareas' element={<UserHome />} />
         <Route path='/perfil' element={ <Perfil />} />
+        <Route path='/register' element={<Register />}/>
         </Routes>
     </div>
  )
