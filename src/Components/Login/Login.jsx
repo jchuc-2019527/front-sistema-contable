@@ -34,6 +34,7 @@ const Login = () => {
           showConfirmButton: false,
           timer: 2000,
         });
+        localStorage.setItem('token', JSON.stringify(res.data.token))
          e.target.reset();
          navigate('/tareas')
       })

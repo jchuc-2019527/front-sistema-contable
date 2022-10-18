@@ -12,7 +12,7 @@
     align-items: center;
 }
 .card{
-    width: 595px;
+    width: 630px;
     height: 338px;
     background: #fff;
     border-radius: 10px;
@@ -62,7 +62,14 @@
     flex-direction: column;
     z-index: 20;
     align-items: center;
+    margin-top: -4rem;
 }
+
+.perfil{
+    color: #3f3f3f;
+    font-size: 2rem;
+}
+
 .content p{
     margin:  0 0;
 }

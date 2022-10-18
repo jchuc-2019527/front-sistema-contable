@@ -12,7 +12,7 @@ const Perfil = () => {
 
     const navigate = useNavigate();
     const [perfil, setPerfil] = useState([]);
-    const [user, setUser] = useState([]);
+    const [company, setCompany] = useState([]);
     const headers = {
         headers: {
             Authorization: `${JSON.parse(localStorage.getItem("token"))}`,
@@ -22,34 +22,36 @@ const Perfil = () => {
     useEffect(() => {
         Axios.get(url +'user/profile', headers)
         .then( (res) => {
-            console.log(res.data)
+            // console.log(res.data.usuario)
+            setPerfil(res.data.usuario[0])
+            setCompany(res.data.usuario[1])
         })
         .catch( (err) =>{
             console.log(err, 'Viene el error')
         })
-    }, []);
+    }, [perfil, company]);
 
   return (
     <div>
-   <body class="profile">
-    <div class="card">
-        <div class="img">
-            <img src={logoP} alt=""/>
+   <body className="profile">
+    <div className="card">
+        <div className="img">
+            <img src={logoP} alt="logo"/>
         </div>
-        <div class="content">
-            <h2>Michael Daniel</h2>
-            <p>Contador</p>
-            <div class="center">
-                <div class="box">
+        <div className="content">
+            <h1>Contador</h1>
+            <h2  >{perfil.nombre}</h2>
+            <div className="center">
+                <div className="box">
                     <h1>Correo</h1>
-                    <p>ejemplo@123.com</p>
+                    <p className='perfil' >{perfil.correo}</p>
                 </div>
                 <div class="box">
                     <h1>Empresa</h1>
-                    <p>Nombre Empresa</p>
+                    <p className='perfil' >{company.nombreEmpresa}</p>
                 </div>
             </div>
-           <Link to={'/tareas'}> <a class="btn" >Regresar</a> </Link>
+           <Link to={'/tareas'}> <a className="btn" >Regresar</a> </Link>
         </div>
     </div>
 </body> 
