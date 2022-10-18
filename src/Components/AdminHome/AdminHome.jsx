@@ -1,8 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./AdminHome.css";
 
 const AdminHome = () => {
+    
+    const navigate = useNavigate();
+
+    const logOut = (e) =>{
+        e.preventDefault();
+        localStorage.clear();
+        navigate('/');
+    }
+
   return (
     <div>
       <body className="inicioAdmin">
@@ -12,7 +21,7 @@ const AdminHome = () => {
           </div>
 
           <nav className="navbar">
-            <a className="sesion" >Cerrar Sesiòn</a>
+            <a onClick={logOut} className="sesion" >Cerrar Sesiòn</a>
           </nav>
         </div>
 
