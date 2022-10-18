@@ -12,7 +12,7 @@ const AdminHome = () => {
           </div>
 
           <nav className="navbar">
-            <a>Cerrar Sesiòn</a>
+            <a className="sesion" >Cerrar Sesiòn</a>
           </nav>
         </div>
 
