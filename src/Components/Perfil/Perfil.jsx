@@ -46,7 +46,7 @@ const Perfil = () => {
               </div>
             </div>
             <Link to={"/tareas"}>
-              <a className="btn">Regresar</a>{" "}
+              <a className="btn">Regresar</a>
             </Link>
           </div>
         </div>

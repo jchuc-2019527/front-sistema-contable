@@ -7,6 +7,17 @@ import Perfil from '../Perfil/Perfil'
 import Register from '../Register/Register'
 import AdminHome from '../AdminHome/AdminHome'
 import RegisterEmpresa from '../RegisterEmpresa/RegisterEmpresa'
+import ActivoFijo from '../ActivoFijo/ActivoFijo'
+import CuentaContable from '../CuentaContable/CuentaContable'
+import Entidad from '../Entidad/Entidad'
+import ImpuestoAdicional from '../ImpuestoAdicional/ImpuestoAdicional'
+import LibroComprasVentasMaestro from '../LibroComprasVentaMaestro/LibroComprasVentasMaestro'
+import PartidaMaestro from '../PartidaMaestro/PartidaMaestro'
+import Periodo from '../Periodo/Periodo'
+import TipoMovimiento from '../TipoMovimientoLibroComprasVentas/TipoMovimiento'
+import TipoActivo from '../TipoActivo/TipoActivo'
+import SaldoContable from '../SaldoContable/SaldoContable'
+import PlantillaContableMaestro from '../PlantillaContableMaestro/PlantillaContableMaestro'
 const Main = () => {
 
   const storageToken = localStorage.getItem('token')
@@ -22,7 +33,18 @@ const Main = () => {
         <Route path='/register' element={<Register />}/>
         <Route path='/registerCompany' element={<RegisterEmpresa />} />
         <Route path='/adminHome' element={<AdminHome />} />
-        </Routes>
+        <Route path='/activoFijo' element={<ActivoFijo />} />
+        <Route path='/cuentaContable' element={<CuentaContable />} />
+        <Route path='/entidad' element={<Entidad />} />
+        <Route path='/impuestoAdicional' element={<ImpuestoAdicional />} />
+        <Route path='/libroComprasVentas' element={<LibroComprasVentasMaestro />} />
+        <Route path='/partidasContables' element={<PartidaMaestro />} />
+        <Route path='/plantillaContable' element={<PlantillaContableMaestro/>} />
+        <Route path='/saldoContable' element={<SaldoContable />} />
+        <Route path='/periodos' element={<Periodo />} />
+        <Route path='/tipoActivo' element={<TipoActivo />} />
+        <Route path='/tipoMovimientoLibroComprasVenta'element={<TipoMovimiento />} />
+        </Routes> 
     </div>
  )
 }

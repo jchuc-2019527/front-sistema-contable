@@ -37,88 +37,82 @@ const UserHome = () => {
             <div className="box">
               <i className="fab fa-angular"></i>
               <h3>Activo Fijo</h3>
-              <a  className="btn">
+              <Link to={'/activoFijo'}  ><a  className="btn">
                 Click Para ir
               </a>
+              </Link>
             </div>
             <div className="box">
               <i className="fab fa-angular"></i>
               <h3>Cuenta Contable</h3>
-              <a className="btn">
+              <Link to={'/cuentaContable'} ><a className="btn">
                 Click Para ir
-              </a>
+              </a></Link>
             </div>
             <div className="box">
               <i className="fab fa-angular"></i>
               <h3>Entidad</h3>
-              <a className="btn">
+             <Link to={'/entidad'} > <a className="btn">
                 Click Para ir
-              </a>
+              </a></Link>
             </div>
             <div className="box">
               <i className="fab fa-angular"></i>
               <h3>Impuesto Adicional</h3>
-              <a
+              <Link to={'/impuestoAdicional'} ><a
                 className="btn"
               >
                 Click Para ir
-              </a>
+              </a></Link>
             </div>
             <div className="box">
               <i className="fab fa-angular"></i>
               <h3>Libro Compras</h3>
-              <a className="btn">
+              <Link to={'/libroComprasVentas'} ><a className="btn">
                 Click Para ir
-              </a>
+              </a></Link>
             </div>
             <div className="box">
               <i className="fab fa-angular"></i>
               <h3>Partida Contable</h3>
-              <a  className="btn">
+              <Link to={'/partidasContables'} ><a  className="btn">
                 Click Para ir
-              </a>
+              </a></Link>
             </div>
             <div className="box">
               <i className="fab fa-angular"></i>
               <h3>Periodo</h3>
-              <a  className="btn">
+              <Link to={'/periodos'} ><a  className="btn">
                 Click Para ir
-              </a>
+              </a></Link>
             </div>
             <div className="box">
               <i className="fab fa-angular"></i>
               <h3>Plantilla Contable</h3>
-              <a  className="btn">
+              <Link to={'/plantillaContable'} ><a  className="btn">
                 Click Para ir
-              </a>
+              </a></Link>
             </div>
             <div className="box">
               <i className="fab fa-angular"></i>
               <h3>Saldo Contable</h3>
-              <a  className="btn">
+              <Link to={'/saldoContable'} ><a  className="btn">
                 Click Para ir
-              </a>
+              </a></Link>
             </div>
             <div className="box">
               <i className="fab fa-angular"></i>
               <h3>Tipo Activo</h3>
-              <a className="btn">
+              <Link to={'/tipoActivo'} ><a className="btn">
                 Click Para ir
-              </a>
-            </div>
-            <div className="box">
-              <i className="fab fa-angular"></i>
-              <h3>Tipo Activo Fijo</h3>
-              <a  className="btn">
-                Click Para ir
-              </a>
+              </a></Link>
             </div>
             <div className="box">
               <i className="fab fa-angular"></i>
               <h3>Tipo Movimiento</h3>
-              <a  className="btn">
+              <Link to={'/tipoMovimientoLibroComprasVenta'} ><a  className="btn">
                 Click Para ir
-              </a>
+              </a></Link>
             </div>
           </div>
         </section>
