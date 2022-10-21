@@ -3,10 +3,10 @@ import "./RegisterEmpresa.css";
 import Axios from "axios";
 import Swal from "sweetalert2";
 import { url } from "../axiosConnect";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const RegisterEmpresa = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [company, setCompany] = useState({
     nombreEmpresa: "",
     nombreComercial: "",
@@ -67,7 +67,7 @@ const RegisterEmpresa = () => {
         <form onSubmit={agregarEmpresa}>
           <div className="form first">
             <div className="details personal">
-              <span className="title">Detalles</span>
+              <span className="title">Agregar una nueva empresa</span>
 
               <div className="fields">
                 <div className="input-field">

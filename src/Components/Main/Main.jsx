@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Home from '../Home/Home'
 import { Route, Routes } from 'react-router-dom'
 import Login from '../Login/Login'
@@ -20,8 +20,6 @@ import SaldoContable from '../SaldoContable/SaldoContable'
 import PlantillaContableMaestro from '../PlantillaContableMaestro/PlantillaContableMaestro'
 const Main = () => {
 
-  const storageToken = localStorage.getItem('token')
-  const [token, setToken] = useState((storageToken === null || storageToken === undefined) ? '' : JSON.parse(storageToken));
 
   return (
     <div>
@@ -43,7 +41,7 @@ const Main = () => {
         <Route path='/saldoContable' element={<SaldoContable />} />
         <Route path='/periodos' element={<Periodo />} />
         <Route path='/tipoActivo' element={<TipoActivo />} />
-        <Route path='/tipoMovimientoLibroComprasVenta'element={<TipoMovimiento />} />
+        <Route path='/tipoMovimientoLibroComprasVenta' element={<TipoMovimiento />} />
         </Routes> 
     </div>
  )

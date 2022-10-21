@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { url } from "../axiosConnect";
 import Axios from "axios";
 import Swal from "sweetalert2";
-import login from '../../Shared/img/login.svg'
+import login from "../../Shared/img/login.svg";
 
 const Login = () => {
-  
   const navigate = useNavigate();
   const [body, setBody] = useState({
     username: "",
@@ -30,62 +29,69 @@ const Login = () => {
         Swal.fire({
           position: "center",
           icon: "success",
-          title: `Bienvenido ${body.username}`,
+          color: "white",
+          background: "rgba(0,0,0,0.9)",
+          title: "Login succesfully",
+          timer: 3000,
+          backdrop: true,
+          timerProgressBar: true,
+          toast: true,
+          showCancelButton: false,
           showConfirmButton: false,
-          timer: 2000,
         });
-        localStorage.setItem('token', JSON.stringify(res.data.token))
-         e.target.reset();
-         navigate('/tareas')
+        localStorage.setItem("token", JSON.stringify(res.data.token));
+        e.target.reset();
+        navigate("/tareas");
       })
       .catch((err) => {
         console.log("Viene el error", err);
         Swal.fire({
+          position: "center",
           icon: "error",
-          title: "Oops...",
-          text: "Username or password incorrect",
+          color: "white",
+          background: "rgba(0,0,0,0.9)",
+          title: "Contraseña o username incorrectos",
+          timer: 3000,
+          backdrop: true,
+          timerProgressBar: true,
+          toast: true,
+          showCancelButton: false,
+          showConfirmButton: false,
         });
-        e.target.reset();
       });
   };
 
   return (
     <div>
       <div className="hello">
-      <body>
-        <div className="login-container">
-          <div className="login-info-container">
-            <h1 className="title">Log in</h1>
-            <div className="social-login"></div>
-            <form onSubmit={handleLogin} className="inputs-container">
-              <input
-                onChange={handleChange}
-                className="input"
-                type="username"
-                placeholder="Username"
-                id="username"
-                name="username"
-              />
-              <input
-                onChange={handleChange}
-                className="input"
-                type="password"
-                placeholder="Password"
-                id="claveUsuario"
-                name="claveUsuario"
-              />
-              <button  className="btn">
-                login
-              </button>
-            </form>
+        <body>
+          <div className="login-container">
+            <div className="login-info-container">
+              <h1 className="title">Log in</h1>
+              <div className="social-login"></div>
+              <form onSubmit={handleLogin} className="inputs-container">
+                <input
+                  onChange={handleChange}
+                  className="input"
+                  type="username"
+                  placeholder="Username"
+                  id="username"
+                  name="username"
+                />
+                <input
+                  onChange={handleChange}
+                  className="input"
+                  type="password"
+                  placeholder="Password"
+                  id="claveUsuario"
+                  name="claveUsuario"
+                />
+                <button className="btn">login</button>
+              </form>
+            </div>
+            <img className="image-container" src={login} alt="login.svg" />
           </div>
-          <img
-            className="image-container"
-            src={login}
-            alt="login.svg"
-          />
-        </div>
-      </body>
+        </body>
       </div>
     </div>
   );
