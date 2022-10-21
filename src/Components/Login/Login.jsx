@@ -25,7 +25,6 @@ const Login = () => {
     e.preventDefault();
     Axios.post(url + "user/login", body)
       .then((res) => {
-        console.log(res.data.message);
         Swal.fire({
           position: "center",
           icon: "success",
@@ -33,8 +32,7 @@ const Login = () => {
           background: "rgba(0,0,0,0.9)",
           title: "Login succesfully",
           timer: 3000,
-          backdrop: true,
-          timerProgressBar: true,
+          imerProgressBar: true,
           toast: true,
           showCancelButton: false,
           showConfirmButton: false,
@@ -44,7 +42,6 @@ const Login = () => {
         navigate("/tareas");
       })
       .catch((err) => {
-        console.log("Viene el error", err);
         Swal.fire({
           position: "center",
           icon: "error",
@@ -52,7 +49,6 @@ const Login = () => {
           background: "rgba(0,0,0,0.9)",
           title: "Contraseña o username incorrectos",
           timer: 3000,
-          backdrop: true,
           timerProgressBar: true,
           toast: true,
           showCancelButton: false,

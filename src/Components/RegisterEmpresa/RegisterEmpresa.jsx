@@ -35,28 +35,27 @@ const RegisterEmpresa = () => {
       .then((res) => {
         Swal.fire({
           position: "center",
-          icon:'success',
+          icon: "success",
           color: "white",
           background: "rgba(0,0,0,0.9)",
           title: "Impuesto agregado satisfactoriamente",
           timer: 5000,
           backdrop: true,
           timerProgressBar: true,
-          toast: true
+          toast: true,
         });
         e.target.reset();
       })
       .catch((err) => {
         Swal.fire({
           position: "center",
-          icon:'warning',
+          icon: "warning",
           color: "white",
           background: "rgba(0,0,0,0.9)",
           title: err.response.data.message,
           timer: 4000,
-          backdrop: true,
           timerProgressBar: true,
-          toast: true
+          toast: true,
         });
       });
   };
