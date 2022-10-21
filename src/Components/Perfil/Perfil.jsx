@@ -21,7 +21,6 @@ const Perfil = () => {
         setCompany(res.data.usuario[1]);
       })
       .catch((err) => {
-        console.log(err, "Viene el error");
       });
   }, [perfil, company]);
 

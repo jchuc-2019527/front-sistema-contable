@@ -31,7 +31,7 @@ const UserHome = () => {
           <p>Seleccione la operaciòn que desee realizar</p>
         </div>
       </div>
-      <div style={{ backgroundColor: " #1D1B1B" }} className="inicioUser">
+      <div className="inicioUser">
         <section className="content sau">
           <div className="box-container">
             <div className="box">

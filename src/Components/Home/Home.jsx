@@ -40,7 +40,7 @@ const Home = () => {
               <div className="box">
                 <i className="fab fa-android"></i>
                 <h3>Reportes de Cuentas</h3>
-                <p>Poder crear un reporte de cuentas por medio de PDF</p>
+                <p>Creacion de reportes de balances, etc</p>
               </div>
             </div>
           </section>
