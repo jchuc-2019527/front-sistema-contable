@@ -26,12 +26,12 @@ const UserHome = () => {
         </nav>
       </div>
       <div>
-        <header className="content header">
+        <div className="content header">
           <h2 className="title">Bienvenido</h2>
           <p>Seleccione la operaciòn que desee realizar</p>
-        </header>
+        </div>
       </div>
-      <body style={{ backgroundColor: " #1D1B1B" }} className="inicioUser">
+      <div style={{ backgroundColor: " #1D1B1B" }} className="inicioUser">
         <section className="content sau">
           <div className="box-container">
             <div className="box">
@@ -116,7 +116,7 @@ const UserHome = () => {
             </div>
           </div>
         </section>
-      </body>
+      </div>
     </div>
     </div>
   );

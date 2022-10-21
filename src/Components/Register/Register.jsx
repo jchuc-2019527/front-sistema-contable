@@ -1,6 +1,6 @@
 import React from "react";
 import "./Register.css";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 
 const Register = () => {
   // const { idEmpre } = useParams();
@@ -19,7 +19,7 @@ const Register = () => {
                     <label>Nombre Empresa</label>
                     <input
                       type="text"
-                      placeholder="Ingrese el nombre"
+                      placeholder="Nombre de empresa"
                       id="nombreEmpresa"
                       name="nombreEmpresa"
                       required
@@ -27,45 +27,54 @@ const Register = () => {
                   </div>
 
                   <div className="input-field">
-                    <label>Nombre Empresa</label>
+                    <label>Nombre</label>
                     <input
                       type="text"
-                      placeholder="Ingrese el nombre"
-                      id="nombreComercial"
-                      name="nombreComercial"
+                      placeholder="Nombre"
+                      id="nombre"
+                      name="nombre"
                       required
                     />
                   </div>
 
                   <div className="input-field">
-                    <label>Direcciòn Empresa</label>
+                    <label>Apellido</label>
                     <input
                       type="text"
-                      placeholder="Ingrese la Direcciòn"
-                      id="direccionEmpresa"
-                      name="direccionEmpresa"
+                      placeholder="Apellido"
+                      id="apellido"
+                      name="apellido"
                       required
                     />
                   </div>
 
                   <div className="input-field">
-                    <label>NIT Empresa</label>
+                    <label>Correo</label>
                     <input
-                      type="text"
-                      placeholder="Ingrese el NIT"
-                      id="NITEmpresa"
-                      name="NITEmpresa"
+                      type="email" 
+                      placeholder="Correo"
+                      id="email"
+                      name="email"
                       required
                     />
                   </div>
                   <div className="input-field">
-                    <label>Porcentaje IVA</label>
+                    <label>Username</label>
                     <input
-                      type="number"
-                      step="any"
-                      placeholder="Ingrese el Porcentaje"
-                      id="porcentajeIVA"
-                      name="porcentajeIVA"
+                      type="text"
+                      placeholder="Username"
+                      id="username"  
+                      name="username"
+                      required
+                    />
+                  </div>
+                  <div className="input-field">
+                    <label>Password</label>
+                    <input
+                      type="password"
+                      placeholder="Contraseña"
+                      id="contraseña"
+                      name="contraseña"
                       required
                     />
                   </div>
@@ -74,7 +83,6 @@ const Register = () => {
               <div className="buttons">
                 <button className="sumbit">
                   <span className="btnText">Agregar</span>
-                  <i className="uil uil-navigator"></i>
                 </button>
               </div>
             </div>

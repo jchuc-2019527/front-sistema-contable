@@ -40,7 +40,7 @@ const Perfil = () => {
                 <h1>Correo</h1>
                 <p className="perfil">{perfil.correo}</p>
               </div>
-              <div class="box">
+              <div className="box">
                 <h1>Empresa</h1>
                 <p className="perfil">{company.nombreEmpresa}</p>
               </div>

@@ -14,7 +14,7 @@ const AdminHome = () => {
 
   return (
     <div>
-      <body className="inicioAdmin">
+      <div className="inicioAdmin">
         <div className="head">
           <div className="logo">
             <a>Logo</a>
@@ -63,7 +63,7 @@ const AdminHome = () => {
             </div>
           </div>
         </section>
-      </body>
+      </div>
     </div>
   );
 };
